@@ -33,7 +33,7 @@ public class WordCounterTest {
 
     @Test
     public void testAddWord_ValidWord() {
-        String word = "apple";
+        String word = "mango";
         when(translator.translate(word)).thenReturn(word);
         wordCounter.addWord(word);
         verify(logger, never()).error(anyString());
